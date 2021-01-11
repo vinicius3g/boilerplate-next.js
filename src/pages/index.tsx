@@ -4,7 +4,8 @@ import styles from '../../styles/Home.module.css'
 type Props = {
   title: string
 }
-const Home = ({ title = "React Avançado"}: Props) => {
+
+const Home = ({ title = 'React Avançado' }: Props) => {
   return (
     <div className={styles.container}>
       <Head>
@@ -13,9 +14,7 @@ const Home = ({ title = "React Avançado"}: Props) => {
       </Head>
 
       <main className={styles.main}>
-        <h1 className={styles.title}>
-          {title}
-        </h1>
+        <h1 className={styles.title}>{title}</h1>
 
         <p className={styles.description}>
           Get started by editing{' '}
